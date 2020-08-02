@@ -75,25 +75,36 @@
                     <ul class="sidebar-menu">
                         <li class="menu-header">Dashboard</li>
                         <li class="#">
-                            <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{url('site/admin')}}">
                                 <i class="fas fa-fire"></i><span>Dashboard</span>
                             </a>
                         </li>
                         <li class="menu-header">Content</li>
                         <li class="#">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{route('posts.index')}}">
                                 <i class="fas fa-newspaper"></i> <span>Post</span>
                             </a>
                         </li>
-                        <li class="menu-header">Transactions</li>
+                        <li class="menu-header">Media</li>
                         <li class="#">
-                            <a class="nav-link" href="#">
-                                <i class="far fa-paper-plane"></i> <span>Contact us</span>
+                            <a class="nav-link" href="{{url('site/admin/social_media')}}">
+                                <i class="far fa-paper-plane"></i> <span>Social Media</span>
                             </a>
                         </li>
+                        <li class="#">
+                            <a class="nav-link" href="{{url('site/admin/message')}}">
+                                <i class="far fa-paper-plane"></i> <span>Message</span>
+                            </a>
+                        </li>
+
                         <li class="menu-header">Configure</li>
                         <li class="#">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{url('site/admin/users')}}">
+                                <i class="fas fa-users"></i> <span>Users</span>
+                            </a>
+                        </li>
+                        <li class="#">
+                            <a class="nav-link" href="{{url('site/admin/setting')}}">
                                 <i class="fas fa-cog"></i> <span>Setting</span>
                             </a>
                         </li>

@@ -4,21 +4,20 @@
      <div class="main-content">
       <section class="section">
           <div class="section-header">
-              <h1>Social Media</h1>
+              <h1>Posts</h1>
           </div>
           <div class="row">
             <div class="col">
               <div class="card">
                 <div class="card-body">
-                <a href="{{route('social_media.create')}}" class="btn btn-primary mt-2 mb-2 float-right">Add item</a>
-                  <div class="table-responsive">
+                 <div class="table-responsive">
                     <table class="table table-bordered" width="100%">
                       <thead class="thead-light">
                         <tr>
                           <th class="thead">No</th>
                           <th class="thead">Name</th>
-                          <th class="thead">Link</th>
-                          <th class="thead">Social media icon</th>
+                          <th class="thead">Subject</th>
+                          <th class="thead">Message</th>
                           <th class="thead">Aksi</th>
                         </tr>
                       </thead>
@@ -26,9 +25,9 @@
                           <tr>
                             <td>1</td>
                             <td>ini judul</td>
-                            <td><a href="https://facebook.com">https://facebook.com</a></td>
-                            <td><i class="fab fw fa-facebook"></i></td>
-                            <td><a href="" class="btn btn-danger ml-2 mr-2 mt-1">Delete</a><a href="" class="btn btn-success ml-2 mr-2 mt-1">Edit</a></td>
+                            <td>Kategori</td>
+                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</td>
+                            <td><a href="" class="btn btn-info ml-2 mr-2 mt-1">Balas</a><a href="" class="btn btn-danger ml-2 mr-2 mt-1">Delete</a></td>
                           </tr>
                         </tbody>
                     </table>

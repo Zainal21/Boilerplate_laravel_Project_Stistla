@@ -10,7 +10,7 @@
             <div class="col">
               <div class="card">
                 <div class="card-body">
-                  <a href="" class="btn btn-primary mt-2 mb-2 float-right">Add item</a>
+                <a href="{{route('posts.create')}}" class="btn btn-primary mt-2 mb-2 float-right">Add item</a>
                   <div class="table-responsive">
                     <table class="table table-bordered" width="100%">
                       <thead class="thead-light">

@@ -18,8 +18,15 @@ Route::get('/', function () {
 });
 
 
-Route::get('site/auth', 'Cp\AuthController@login');
-Route::get('site/admin', 'Cp\DashboardController@index');
-Route::get('site/admin/posts', 'Cp\PostController@index');
-Route::get('site/admin/social_media', 'Cp\SocialMediaController@index');
-Route::get('site/admin/setting', 'Cp\SettingController@index');
+Route::group(['prefix' => 'site/', 'namespace' => 'Cp'], function(){
+    Route::get('auth', 'AuthController@login');
+    Route::get('admin', 'DashboardController@index');
+    Route::resource('admin/posts', 'PostController');
+    Route::resource('admin/social_media', 'SocialMediaController');
+    Route::get('admin/message', 'SocialMediaController@message');
+    Route::get('admin/setting', 'SettingController@index');
+    // user
+    Route::get('admin/users', 'UserController@index');
+    Route::get('admin/users/create', 'UserController@create');
+    Route::get('admin/users/edit', 'UserController@edit');
+});

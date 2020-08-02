@@ -11,4 +11,13 @@ class SocialMediaController extends Controller
     {
         return view('Backend.Social_Media.index');
     }
+    public function create()
+    {
+        return view('Backend.Social_Media.create');
+    }
+
+    public function message()
+    {
+        return view('Backend.Message.index');
+    }
 }

@@ -11,4 +11,9 @@ class PostController extends Controller
     {
         return view('Backend.Post.index');
     }
+
+    public function create()
+    {
+        return view('Backend.Post.create');
+    }
 }
