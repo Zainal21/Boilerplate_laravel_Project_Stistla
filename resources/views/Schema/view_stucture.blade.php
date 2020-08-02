@@ -36,7 +36,7 @@
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="img/avatar.png" class="rounded-circle mr-1">
+                        <img alt="image" src="{{asset('Backend/img/avatar.png')}}" class="rounded-circle mr-1">
                             <div class="d-sm-none d-lg-inline-block">Admin</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -82,16 +82,21 @@
                         <li class="menu-header">Content</li>
                         <li class="#">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-newspaper"></i> <span>Berita</span>
+                                <i class="fas fa-newspaper"></i> <span>Post</span>
                             </a>
                         </li>
                         <li class="menu-header">Transactions</li>
                         <li class="#">
                             <a class="nav-link" href="#">
-                                <i class="far fa-paper-plane"></i> <span>Hubungi Kami</span>
+                                <i class="far fa-paper-plane"></i> <span>Contact us</span>
                             </a>
                         </li>
                         <li class="menu-header">Configure</li>
+                        <li class="#">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-cog"></i> <span>Setting</span>
+                            </a>
+                        </li>
                     </ul>
                 </aside>
             </div>

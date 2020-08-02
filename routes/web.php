@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('site/auth', 'Cp\AuthController@login');
 Route::get('site/admin', 'Cp\DashboardController@index');
+Route::get('site/admin/posts', 'Cp\PostController@index');
+Route::get('site/admin/social_media', 'Cp\SocialMediaController@index');
+Route::get('site/admin/setting', 'Cp\SettingController@index');
