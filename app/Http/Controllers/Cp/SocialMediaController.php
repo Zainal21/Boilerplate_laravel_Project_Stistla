@@ -16,8 +16,19 @@ class SocialMediaController extends Controller
         return view('Backend.Social_Media.create');
     }
 
+    public function store(Request $req)
+    {
+        // store to dababase
+    }
+    public function destroy($id)
+    {
+        // delete from database
+    }
+
     public function message()
     {
         return view('Backend.Message.index');
     }
+
+
 }

@@ -18,12 +18,18 @@ Route::get('/', function () {
 });
 
 
-Route::group(['prefix' => 'site/', 'namespace' => 'Cp'], function(){
+Route::group([
+    'prefix' => 'site/',
+     'namespace' => 'Cp'
+    ], function(){
     Route::get('auth', 'AuthController@login');
+    
     Route::get('admin', 'DashboardController@index');
     Route::resource('admin/posts', 'PostController');
     Route::resource('admin/social_media', 'SocialMediaController');
+
     Route::get('admin/message', 'SocialMediaController@message');
+    // setting
     Route::get('admin/setting', 'SettingController@index');
     // user
     Route::get('admin/users', 'UserController@index');

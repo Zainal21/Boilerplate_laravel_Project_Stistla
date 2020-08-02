@@ -16,4 +16,25 @@ class PostController extends Controller
     {
         return view('Backend.Post.create');
     }
+
+
+    public function store(Request $req)
+    {
+        // store data to database
+    }
+
+    public function edit()
+    {
+        // show from edit post
+    }
+
+    public function update(Request $req, $id)
+    {
+        // update data  post
+    }
+
+    public function destroy($id)
+    {
+        // delete data post
+    }
 }

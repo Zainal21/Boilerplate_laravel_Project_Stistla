@@ -15,8 +15,22 @@ class UserController extends Controller
     {
         return view('Backend.User.create');
     }
+
+    public function store(Request $req)
+    {
+        // Store data user to database
+    }
+
     public function edit()
     {
         return view('Backend.User.edit');
+    }
+    public function update(Request $req, $id)
+    {
+        // update data from database
+    }
+    public function destroy()
+    {
+        // delete data from database
     }
 }

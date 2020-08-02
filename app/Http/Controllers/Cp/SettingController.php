@@ -11,4 +11,8 @@ class SettingController extends Controller
     {
         return view('Backend.Settings.index');
     }
+    public function update(Request $req)
+    {
+        // update data setting from database
+    }
 }
