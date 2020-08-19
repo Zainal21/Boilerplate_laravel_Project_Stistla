@@ -14,11 +14,11 @@ class AuthController extends Controller
     }
     public function proccess_login(Request $req)
     {
-
+        // login proses
     }
 
     public function logout()
     {
-
+        // logout proses
     }
 }
