@@ -33,7 +33,7 @@ Route::group([
     Route::get('admin/setting', 'SettingController@index');
     // user
     Route::get('admin/users', 'UserController@index');
-
+        
     Route::get('admin/users/create', 'UserController@create');
     
     Route::get('admin/users/edit', 'UserController@edit');
